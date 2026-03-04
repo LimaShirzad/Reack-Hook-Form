@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-// ✅ Yup Validation Schema
+//  Yup Validation Schema
 const schema = yup.object({
   fullName: yup.string().required("Full Name is required").min(3),
   email: yup.string().required("Email is required").email(),
@@ -79,7 +79,7 @@ function RegisterForm() {
         <button type="submit">Register</button>
 
         {/* Success Message */}
-        {success && <p className="success">🎉 Registration Successful!</p>}
+        {success && <p className="success"> Registration Successful!</p>}
       </form>
     </div>
   );

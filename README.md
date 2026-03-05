@@ -1,16 +1,61 @@
-# React + Vite
+# React Registration Form Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple and modern registration form built with **React**, **React Hook Form**, and **Yup** for validation.  
+It is designed for learning purposes and demonstrates how to create forms with validation in React.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Full Name**, **Email**, **Password**, and **Confirm Password** fields  
+- **Terms & Conditions** checkbox  
+- Validation using **React Hook Form + Yup**  
+- Error messages displayed under each field  
+- Success message on successful submission  
+- Modern floating label design  
+- Mobile responsive  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Form Validation Rules
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Field               | Validation                                  |
+|--------------------|--------------------------------------------|
+| Full Name           | Required, minimum 3 characters             |
+| Email               | Required, must be a valid email            |
+| Password            | Required, minimum 8 characters, at least 1 number |
+| Confirm Password    | Required, must match password              |
+| Terms & Conditions  | Must be checked                             |
+
+---
+
+## Folder Structure
+registration-form/
+├─ public/
+├─ src/
+│ ├─ assets/ # Images, logos (optional)
+│ ├─ components/
+│ │ └─ RegisterForm.jsx
+│ ├─ styles/
+│ │ └─ register.css
+│ ├─ App.jsx
+│ └─ main.jsx
+├─ package.json
+└─ README.md
+
+
+---
+
+## How to Run the Project
+
+1. **Clone the repository** (if using GitHub):
+```bash
+git clone https://github.com/LimaShirzad/registration-form.git
+cd registration-form
+
+npm install
+npm run dev
+
+
+
+
